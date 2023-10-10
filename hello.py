@@ -1,3 +1,3 @@
 print("hello")
 
-omglmaoooo jfjeseofal
+hello
