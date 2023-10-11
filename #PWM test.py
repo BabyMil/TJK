@@ -12,8 +12,8 @@ SpeedPin = 23
 SpeedPin1 = 24
 # PWM pins
 
-DirectionPin = 16
-DirectionPin1 = 18
+DirectionPin = 4
+DirectionPin1 = 5
 
 GPIO.setwarnings(False)			#disable warnings
 GPIO.setmode(GPIO.BCM)	#set pin numbering system
