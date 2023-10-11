@@ -8,12 +8,12 @@
 import RPi.GPIO as GPIO
 from time import sleep
 
-SpeedPin = 12
-SpeedPin1 = 13
+SpeedPin = 33
+SpeedPin1 = 35
 # PWM pins
 
-DirectionPin = 2
-DirectionPin1 = 3
+DirectionPin = 16
+DirectionPin1 = 18
 
 GPIO.setwarnings(False)			#disable warnings
 GPIO.setmode(GPIO.BCM)	#set pin numbering system
