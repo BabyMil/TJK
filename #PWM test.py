@@ -8,8 +8,8 @@
 import RPi.GPIO as GPIO
 from time import sleep
 
-SpeedPin = 33
-SpeedPin1 = 35
+SpeedPin = 23
+SpeedPin1 = 24
 # PWM pins
 
 DirectionPin = 16
