@@ -19,8 +19,8 @@ SpeedPinA1 = 19
 DirectionPin = 4
 DirectionPin1 = 17
 
-DirectionPinA = 2
-DirectionPinA1 = 3
+DirectionPinA = 3
+DirectionPinA1 = 2
 
 GPIO.setwarnings(False)			#disable warnings
 GPIO.setmode(GPIO.BOARD)	#set pin numbering system
