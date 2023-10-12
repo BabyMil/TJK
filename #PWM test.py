@@ -2,7 +2,7 @@
 
 
 
-#hej
+
 
 
 import RPi.GPIO as GPIO
@@ -23,7 +23,7 @@ DirectionPinA = 11
 DirectionPinA1 = 13
 
 GPIO.setwarnings(False)			#disable warnings
-GPIO.setmode(GPIO.BCM)	#set pin numbering system
+GPIO.setmode(GPIO.BOARD)	#set pin numbering system
 
 GPIO.cleanup()
 
