@@ -46,11 +46,11 @@ pi_pwm.start(0)
 pi_pwm1 = GPIO.PWM(SpeedPin1,1000)		#create PWM instance with frequency
 pi_pwm1.start(0)	
 
-pi_pwm1 = GPIO.PWM(SpeedPinA,1000)		#create PWM instance with frequency
-pi_pwm1.start(0)
+pi_pwmA1 = GPIO.PWM(SpeedPinA,1000)		#create PWM instance with frequency
+pi_pwmA1.start(0)
 
-pi_pwm1 = GPIO.PWM(SpeedPinA1,1000)		#create PWM instance with frequency
-pi_pwm1.start(0)
+pi_pwmA2 = GPIO.PWM(SpeedPinA1,1000)		#create PWM instance with frequency
+pi_pwmA2.start(0)
 
 GPIO.output(DirectionPin, True)
 GPIO.output(DirectionPin1, True)
@@ -64,9 +64,11 @@ while True:
     for duty in range(0,101,1):
         pi_pwm.ChangeDutyCycle(duty) #provide duty cycle in the range 0-100
         pi_pwm1.ChangeDutyCycle(duty)
+        pi_pwmA1.ChangeDutyCycle(duty)
         sleep(0.1)
                 
     for duty in range(100,0,-1):
         pi_pwm.ChangeDutyCycle(duty)
         pi_pwm1.ChangeDutyCycle(duty)
+        pi_pwmA2.ChangeDutyCycle(duty)
         sleep(0.1)
