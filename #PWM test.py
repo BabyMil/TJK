@@ -40,16 +40,16 @@ GPIO.setup(DirectionPinA,GPIO.OUT)
 GPIO.setup(DirectionPinA1,GPIO.OUT)
 
 
-pi_pwm = GPIO.PWM(SpeedPin,5000)		#create PWM instance with frequency
+pi_pwm = GPIO.PWM(SpeedPin,1000)		#create PWM instance with frequency
 pi_pwm.start(0)
 
-pi_pwm1 = GPIO.PWM(SpeedPin1,5000)		#create PWM instance with frequency
+pi_pwm1 = GPIO.PWM(SpeedPin1,1000)		#create PWM instance with frequency
 pi_pwm1.start(0)	
 
-pi_pwmA1 = GPIO.PWM(SpeedPinA,5000)		#create PWM instance with frequency
+pi_pwmA1 = GPIO.PWM(SpeedPinA,1000)		#create PWM instance with frequency
 pi_pwmA1.start(0)
 
-pi_pwmA2 = GPIO.PWM(SpeedPinA1,5000)	#create PWM instance with frequency
+pi_pwmA2 = GPIO.PWM(SpeedPinA1,1000)	#create PWM instance with frequency
 pi_pwmA2.start(0)
 
 
@@ -62,16 +62,16 @@ GPIO.output(DirectionPinA1, True)
 
 #start PWM of required Duty Cycle 
 while True:
-    for duty in range(100):
-        pi_pwm.ChangeDutyCycle(duty) #provide duty cycle in the range 0-100
-        pi_pwm1.ChangeDutyCycle(duty)
-        pi_pwmA1.ChangeDutyCycle(duty)
-        pi_pwmA2.ChangeDutyCycle(duty)
+   
+    pi_pwm.ChangeDutyCycle(100) #provide duty cycle in the range 0-100
+    pi_pwm1.ChangeDutyCycle(100)
+    pi_pwmA1.ChangeDutyCycle(100)
+    pi_pwmA2.ChangeDutyCycle(100)
         #sleep(0.1)
                 
-    for duty in range(100):
-        pi_pwm.ChangeDutyCycle(duty)
-        pi_pwm1.ChangeDutyCycle(duty)
-        pi_pwmA1.ChangeDutyCycle(duty)
-        pi_pwmA2.ChangeDutyCycle(duty)
+    
+    pi_pwm.ChangeDutyCycle(100)
+    pi_pwm1.ChangeDutyCycle(100)
+    pi_pwmA1.ChangeDutyCycle(100)
+    pi_pwmA2.ChangeDutyCycle(100)
         #sleep(0.1)
