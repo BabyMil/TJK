@@ -63,15 +63,15 @@ GPIO.output(DirectionPinA1, True)
 #start PWM of required Duty Cycle 
 while True:
    
-    pi_pwm.ChangeDutyCycle(300) #provide duty cycle in the range 0-100
-    pi_pwm1.ChangeDutyCycle(300)
-    pi_pwmA1.ChangeDutyCycle(300)
-    pi_pwmA2.ChangeDutyCycle(300)
+    pi_pwm.ChangeDutyCycle(100) #provide duty cycle in the range 0-100
+    pi_pwm1.ChangeDutyCycle(100)
+    pi_pwmA1.ChangeDutyCycle(100)
+    pi_pwmA2.ChangeDutyCycle(100)
         #sleep(0.1)
                 
     
-    pi_pwm.ChangeDutyCycle(300)
-    pi_pwm1.ChangeDutyCycle(300)
-    pi_pwmA1.ChangeDutyCycle(300)
-    pi_pwmA2.ChangeDutyCycle(300)
+    pi_pwm.ChangeDutyCycle(100)
+    pi_pwm1.ChangeDutyCycle(100)
+    pi_pwmA1.ChangeDutyCycle(100)
+    pi_pwmA2.ChangeDutyCycle(100)
         #sleep(0.1)
