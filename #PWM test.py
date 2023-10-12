@@ -40,16 +40,16 @@ GPIO.setup(DirectionPinA,GPIO.OUT)
 GPIO.setup(DirectionPinA1,GPIO.OUT)
 
 
-pi_pwm = GPIO.PWM(SpeedPin,1000)		#create PWM instance with frequency
+pi_pwm = GPIO.PWM(SpeedPin,10000)		#create PWM instance with frequency
 pi_pwm.start(0)
 
-pi_pwm1 = GPIO.PWM(SpeedPin1,1000)		#create PWM instance with frequency
+pi_pwm1 = GPIO.PWM(SpeedPin1,10000)		#create PWM instance with frequency
 pi_pwm1.start(0)	
 
-pi_pwmA1 = GPIO.PWM(SpeedPinA,1000)		#create PWM instance with frequency
+pi_pwmA1 = GPIO.PWM(SpeedPinA,10000)		#create PWM instance with frequency
 pi_pwmA1.start(0)
 
-pi_pwmA2 = GPIO.PWM(SpeedPinA1,1000)	#create PWM instance with frequency
+pi_pwmA2 = GPIO.PWM(SpeedPinA1,10000)	#create PWM instance with frequency
 pi_pwmA2.start(0)
 
 
