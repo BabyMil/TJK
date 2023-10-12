@@ -67,11 +67,11 @@ while True:
         pi_pwm1.ChangeDutyCycle(duty)
         pi_pwmA1.ChangeDutyCycle(duty)
         pi_pwmA2.ChangeDutyCycle(duty)
-        sleep(0.1)
+        #sleep(0.1)
                 
     for duty in range(100):
         pi_pwm.ChangeDutyCycle(duty)
         pi_pwm1.ChangeDutyCycle(duty)
         pi_pwmA1.ChangeDutyCycle(duty)
         pi_pwmA2.ChangeDutyCycle(duty)
-        sleep(0.1)
+        #sleep(0.1)
