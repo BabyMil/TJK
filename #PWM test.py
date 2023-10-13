@@ -69,6 +69,7 @@ GPIO.output(DirectionPin4, False)
 def TurnLeft():
     print("Turning Left")
     SpeedPin.ChangeDutyCycle(100)
+    
 
 def TurnRight():
     print("Turning Right")
@@ -79,7 +80,7 @@ def GoForward():
     SpeedPin1.ChangeDutyCycle(100)
 
 def GoBackward():
-    print("reversing")
+    print("Reverse")
     SpeedPinA1.ChangeDutyCycle(100)
 
     
