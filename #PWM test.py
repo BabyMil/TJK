@@ -19,7 +19,7 @@ SpeedPinA1 = 12
 DirectionPin1 = 4
 DirectionPin2 = 17
 
-DirectionPin3 = 3
+DirectionPin3 = 3   
 DirectionPin4 = 2  
 
 GPIO.setwarnings(False)			#disable warnings
@@ -66,22 +66,17 @@ GPIO.output(DirectionPin3, False)
 GPIO.output(DirectionPin4, False)
 
 
-#start PWM of required Duty Cycle 
 def TurnLeft():
     print("Turning Left")
-    SpeedPin.ChangeDutyCycle(100)
 
 def TurnRight():
     print("Turning Right")
-    SpeedPin1.ChangeDutyCycle(100)
 
 def GoForward():
     print("Going Forward")
-    SpeedPinA.ChangeDutyCycle(100)
 
 def GoBackward():
     print("reversing")
-    SpeedPinA1.ChangeDutyCycle(100)
 
     
 while True:
