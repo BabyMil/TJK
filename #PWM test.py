@@ -16,11 +16,11 @@ SpeedPinA1 = 12
 
 
 
-DirectionPin = 4
-DirectionPin1 = 17
+DirectionPin1 = 4
+DirectionPin2 = 17
 
-DirectionPinA = 3
-DirectionPinA1 = 2  
+DirectionPin3 = 3
+DirectionPin4 = 2  
 
 GPIO.setwarnings(False)			#disable warnings
 GPIO.setmode(GPIO.BCM)	#set pin numbering system
@@ -28,16 +28,20 @@ GPIO.setmode(GPIO.BCM)	#set pin numbering system
 GPIO.cleanup()
 
 GPIO.setup(SpeedPin,GPIO.OUT)
+
 GPIO.setup(SpeedPin1,GPIO.OUT)
 
 GPIO.setup(SpeedPinA,GPIO.OUT)
+
 GPIO.setup(SpeedPinA1,GPIO.OUT)
 
-GPIO.setup(DirectionPin,GPIO.OUT)
 GPIO.setup(DirectionPin1,GPIO.OUT)
 
-GPIO.setup(DirectionPinA,GPIO.OUT)
-GPIO.setup(DirectionPinA1,GPIO.OUT)
+GPIO.setup(DirectionPin2,GPIO.OUT)
+
+GPIO.setup(DirectionPin3,GPIO.OUT)
+
+GPIO.setup(DirectionPin4,GPIO.OUT)
 
 
 pi_pwm = GPIO.PWM(SpeedPin,1000)		#create PWM instance with frequency
@@ -53,11 +57,13 @@ pi_pwmA2 = GPIO.PWM(SpeedPinA1,1000)	#create PWM instance with frequency
 pi_pwmA2.start(0)
 
 
-GPIO.output(DirectionPin, True)
 GPIO.output(DirectionPin1, True)
 
-GPIO.output(DirectionPinA, True)
-GPIO.output(DirectionPinA1, True)
+GPIO.output(DirectionPin2, True)
+
+GPIO.output(DirectionPin3, False)
+
+GPIO.output(DirectionPin4, False)
 
 
 #start PWM of required Duty Cycle 
